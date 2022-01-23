@@ -1,0 +1,23 @@
+/* ***************** Navbar Media Query Start ************************** */
+
+@media(max-width: 991px)
+{
+	.navbar .nav-item{
+		padding-right: 0;
+	}
+	.card1{
+		margin: 30px auto;
+	}
+	.columns{
+		padding: 0;
+	}
+	.row{
+		margin: 0;
+	}
+}
+/* *********************** Navbar Media Query End ****************************************** */
+@media(min-width: 991px){
+	section .gx-5{
+		--bs-gutter-x: 15rem;
+	}
+}

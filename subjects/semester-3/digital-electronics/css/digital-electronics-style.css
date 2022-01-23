@@ -1,0 +1,419 @@
+/*<style>*/
+/********************************* Font Montserrat ***********************************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/********************************* Font Poppins ********************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/********************** Chewy ***********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:ital,wght@1,100&display=swap');
+/*</style>*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+/* **************************** Navbar Css Start **************************************** */
+.navbar .nav-item{
+	padding-right: 41px;
+	font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: rgba(0,0,0,.9);
+
+
+}
+.navbar{
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.35) 100%) !important;
+/* navbar-shadow */
+
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) !important;
+    backdrop-filter: blur(24px) !important;
+}
+.navbar-toggler-icon {
+    background: url(../assets/logo/navbar-toggler-icon.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 100% !important;
+
+}
+.navbar-toggler{
+	border: none;
+}
+.navbar-toggler:focus{
+	box-shadow: none;
+
+}
+
+/* ******************************** Navbar Css End ******************************************** */
+
+/* ******************************** Banner Section ******************************************** */
+.banner-bg{
+	background-image: linear-gradient(to right top, #ffffff, #ffe4fd, #ffc4d7, #ffac90, #f7aa3b);
+	padding-top: 123px;
+}
+.banner-text h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	line-height: 3rem;
+	letter-spacing: .5px;
+	color: #03113a;
+}
+.banner-text p{
+	padding: 10px;
+	margin: 0;
+	font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    color: #737373;
+
+}
+.banner-text p i{
+	margin-right: 12px;
+	color: #df3f37;
+}
+
+/* ****************************** Books Section ************************************ */
+
+.books-section{
+	background-image: linear-gradient(to right top, #ffffff, #fdfafd, #fef5f9, #fff0f1, #ffebe7);
+}
+.books-section .book-img img{
+	/*max-height: 350px;*/
+	/*max-width: 350px;*/
+	height: 100%;
+	width: 100%;
+
+	transition: width 2s linear 2s;
+}
+
+.books-section .book-text{
+	padding: 20px;
+}
+.books-section .book-text i{
+	font-size: 40px;
+}
+.books-section .book-text span{
+	color: #df3f37;
+}
+.books-section .book-text .open-book-icon{
+	display: none;
+}
+/*.close-book-icon ~ .open-book-icon{
+	transition: display 1.2s;
+}*/
+.close-book-icon:hover ~ .open-book-icon{
+	display: block;
+}
+.close-book-icon:hover{
+	display: none;
+
+}
+/* Book row-1 and row-2 */
+.book-row-2,.book-row-1{
+      /*padding: 50px 0;*/
+      margin-top: 100px;
+}
+.fourth-row{
+	padding-bottom: 100px;
+}
+
+.books-section h1{
+	font-family: 'Chewy', cursive;
+    /*font-family: 'Montserrat', sans-serif;*/
+	font-style: normal;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #252B42;
+    font-size: 58px;
+    line-height: 80px;
+    background-image: linear-gradient(to right top, #2b193e, #5e2d57, #934568, #c66272, #f38677);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+}
+.book-text h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+    font-size: 35px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+.book-text h3{
+	font-size: 25px;
+	letter-spacing: .2px;
+	color: #252B42;
+	font-weight: 500;
+
+}
+.book-text .book-para-1{
+	font-weight: 400;
+    font-size: 20px;
+    line-height: 15px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.book-text .book-para-2{
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: .2px;
+	color: #737373;
+}
+.book-row-2 h3,.book-row-1 h3{
+	margin-top: 50px;
+}
+.book-img-div-2{
+	height: 82%;
+	width: 52%;
+}
+.book-img-div-1{
+	height: 82%;
+	width: 52%;
+}
+.book-img-div-2,.book-img-div-1{
+	box-shadow: 15px 15px 15px #93562c;
+}
+.span-text
+{
+	position: relative;
+	top: -8px;
+}
+
+}
+/* ******************** Youtube Section ****************************** */
+#you{
+		background: linear-gradient(to right top, #ffffff, #fdfafd, #fef5f9, #fff0f1, #ffebe7) !important;
+		border: 2px solid red;
+}
+.youtube-section{
+	background: linear-gradient(to right top, #ffffff, #fdfafd, #fef5f9, #fff0f1, #ffebe7);
+}
+
+.youtube-section h1{
+	font-family: 'Chewy', cursive;
+	font-style: normal;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #252B42;
+    font-size: 58px;
+    line-height: 80px;
+    background-image: linear-gradient(to right top, #2b193e, #5e2d57, #934568, #c66272, #f38677);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tutorial-row-1,.tutorial-row-2{
+	margin-top: 100px;
+}
+.tutorial-text{
+	margin-top: 50px;
+}
+.tutorial-text h3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+    font-size: 25px;
+    /*line-height: 57px;*/
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+.tutorial-text p{
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: .2px;
+	color: #737373;
+}
+.tutorial-text a{
+	text-decoration: none;
+	color: #737373;
+}
+.tutorial-text a:hover{
+	color: #df3f39;
+}
+
+.col-text h2 span i{
+  font-size: 45px;
+  color: red;
+  margin-right: 8px;
+
+}
+.col-text h2{
+  display: flex;
+  /*align-items: center;*/
+}
+
+/* ********************** Footer Section ************************************* */
+
+/************ footer *************/
+.footer-ul{
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #060c22;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta{
+	margin: 15px 0;
+}
+.single-cta i {
+  color: #de413a;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}	
+.footer-logo{
+	padding-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 227px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #de413a;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #de413a;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #de413a;
+    padding: 13px 20px;
+    border: 1px solid #de413a;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #02071a;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #de413a;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="home/assets/logo/favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="home/css/style.css">
+		<link rel="stylesheet" href="home/css/responsive.css">
+		<title>Educatalyst</title>
+	</head>
+	<body onload="loaderFunction()">
+		<div id="loading">
+			
+		</div>
+		<header class="fixed-top">
+			<div class="logo d-flex">
+				<a href="index.html" class="navbar-brand desktop-logo text-center"><img id="home-logo-img" src="home/assets/logo/home-page-logo.png" alt=""></a>
+			</div>
+			<div class="main-nav">
+				<!-- Navbar Section-->
+				<nav class="navbar navbar-expand-lg navbar-light navigation-menu bg-light">
+					<div class="container navbar-container">
+						<a href="" class="navbar-brand mobile-logo"><img src="home/assets/logo/mobile-logo.png" alt=""></a>
+						<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link fw-bold active" aria-current="page" href="#">HOME</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link fw-bold" aria-current="page" href="aboutUs/about.html">ABOUT US</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item dropdown">
+									<a class="nav-link fw-bold dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										MATERIAL
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+										<li><a class="dropdown-item" href="semester-selection/semesters.html">CSE</a></li>
+										<li><hr class="dropdown-divider"></li>
+										<li><a class="dropdown-item disabled" href="#">ECE</a></li>
+										<li><a class="dropdown-item disabled" href="#">EE</a></li>
+										<li><a class="dropdown-item disabled" href="#">ME</a></li>
+										<li><a class="dropdown-item disabled" href="#">CIVIL</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link fw-bold" aria-current="page" href="contactUs/contact.html">CONTACT</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- Banner section  -->
+		<section class="sec1">
+			<div id="demo" class="carousel slide" data-bs-ride="carousel">
+				<!-- Indicators/dots -->
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+				</div>
+				
+				<!-- The slideshow/carousel -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="home/assets/img/banner3.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+						<div class="carousel-caption">
+							<h3>Science can amuse and fascinate us all, but it is engineering that changes the world.</h3>
+							<p>— Isaac Asimov</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="home/assets/img/banner2.jpg" alt="Chicago" class="d-block" style="width:100%">
+						<div class="carousel-caption">
+							<h3>If something's important enough, you should try. Even if - the probable outcome is failure.</h3>
+							<p>— Elon Musk</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="home/assets/img/banner1.jpg" alt="New York" class="d-block" style="width:100%">
+						<div class="carousel-caption">
+							<h3>We are continually faced by great opportunities brilliantly disguised as insoluble problems.</h3>
+							<p>— Lee Iacocca</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Left and right controls/icons -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				</button>
+			</div>
+		</section>
+		<!--*************** section-2  **************-->
+		<section>
+			<div class="sec2-container container-fluid">
+				<div class="container">
+					<div class="sec2-row row text-center">
+						<div class="sec2-col col-sm-12 col-md-4 col-xl-4 text-white" data-aos="fade-right" >
+							<h1 class="text-uppercase " >
+							Be a Hawkeye
+							</h1>
+						</div>
+						<div class="sec2-col col-sm-12 col-md-4 col-xl-4 text-white" data-aos="fade-up">
+							<p>
+								EduCatalyst is where great stories begin.
+								<br>
+								It's time to start yours. Find out how.
+							</p>
+						</div>
+						<div class="sec2-col col-sm-12 col-md-4 col-xl-4 text-white" data-aos="fade-left">
+							<div class="sec2-btn mx-auto" >
+								<a href="https://ptu.ac.in/" target="_blank" class="text-decoration-none">Campus Tour <i class="sec2-icon fas fa-arrow-right text-dark"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--******************** section 3 ****************-->
+		<section class="sec3">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-6 sec3-col-img" >
+						<img src="home/assets/img/logoimg.svg" class="w-100 h-100" alt="">
+					</div>
+					<div class="sec3-col col-sm-12 col-md-12 col-lg-6 text-center d-flex flex-column justify-content-center">
+						<h1 class="sec3-title"><span class="sec3-gretext">EduCatalyst</span></h1>
+						<p><i class="sec3-i fas fa-star-half-alt me-2"></i>The <strong>EduCatalyst</strong>, web app has been developed to override the problems prevailing students to finding the ptu syllabus and we also provide study references of each topic. This webapp is supported to eliminate and, in some cases, reduce the hardships faced by Student in finding good resources to study.</p>
+						<p><i class="sec3-i fas fa-star-half-alt me-2"></i>Moreover, this app is designed for the particular need of the the students (for exam preparation). In this website we provide e-books, theory and video tutorials references and course references.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ************** section 4 ****************** -->
+		<section class="sec4">
+			<div class="container">
+				<div class="owl-carousel owl-theme">
+					<div class="item h-100">
+						<img src="home/assets/img/cse.jpg" alt="">
+						<div class="card-head text-center d-flex justify-content-center flex-column" >
+							<h1>Computer Science Engineering</h1>
+							<a href="semester-selection/semesters.html" class="card-btn">Explore</a>
+						</div>
+					</div>
+					<div class="item h-100">
+						<img src="home/assets/img/ece.jpg" class="w-100" alt="">
+						<div class="card-head text-center d-flex justify-content-center flex-column">
+							<h1>Electronics and Communications Engineering </h1>
+							<a href="" class="card-btn text-decoration-none ">Explore</a>
+						</div>
+						<div class="overlay">
+							<div class="text">Coming Soon... <br><i class="fas fa-sad-tear"></i></div>
+						</div>
+					</div>
+					<div class="item h-100">
+						<img src="home/assets/img/me.jpg" class="w-100" alt="">
+						<div class="card-head text-center d-flex justify-content-center flex-column">
+							<h1>Mechanical Engineering</h1>
+							<a href="" class="card-btn">Explore</a>
+						</div>
+						<div class="overlay">
+							<div class="text">Coming Soon... <br><i class="fas fa-sad-tear"></i></div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="home/assets/img/ee.jpg" alt="">
+						<div class="card-head text-center d-flex justify-content-center flex-column">
+							<h1>Electrical Engineering</h1>
+							<a href="" class="card-btn">Explore</a>
+						</div>
+						<div class="overlay">
+							<div class="text">Coming Soon... <br><i class="fas fa-sad-tear"></i></div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="home/assets/img/civil.jpg" alt="">
+						<div class="card-head text-center d-flex justify-content-center flex-column">
+							<h1>Civil Engineering</h1>
+							<a href="" class="card-btn">Explore</a>
+						</div>
+						<div class="overlay">
+							<div class="text">Coming Soon... <br><i class="fas fa-sad-tear"></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="btns d-flex justify-content-center">
+					<div class="customNextBtn"><i class="far fa-hand-point-left"></i></div>
+					<div class="customPreviousBtn"><i class="far fa-hand-point-right"></i></div>
+				</div>
+			</div>
+		</section>
+		<!--******************** section 5 ****************-->
+		<section class="sec3">
+			<div class="container">
+				<div class="row flex-row-reverse">
+					<div class="col-sm-12 col-md-12 col-lg-6 sec3-col-img sec5-col-img" >
+						<img src="home/assets/img/ptu.jpg" class="w-100 h-100" alt="">
+					</div>
+					<div class="sec3-col col-sm-12 col-md-12 col-lg-6 text-center d-flex flex-column justify-content-center">
+						<h1 class="sec3-title"><span class="sec3-gretext">IKGPTU</span></h1>
+						<p><i class="sec3-i fas fa-star-half-alt me-2"></i>I.K.Gujral Punjab Technical University (IKGPTU) was established by an Act of State Legislature on 16th January, 1997, to promote technical, management and pharmaceutical education in the state at degree level and above. It was established as Punjab Technical University and renamed as I.K.Gujral Punjab Technical University by State Government in the honor to Late Sh. Inder Kumar Gujral, Former Prime Minister of India, in 2015.</p>
+						<p><i class="sec3-i fas fa-star-half-alt me-2"></i>IKGPTU is undertaking and supervising the instructions and award of 30+ bachelor’s degrees in Engineering & Technology & 20+ in non-AICTE & UGC courses.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--*************** section-6  **************-->
+		<section>
+			<div class="sec2-container container-fluid">
+				<div class="container">
+					<div class="sec2-row row text-center">
+						<div class="sec2-col col-sm-12 col-md-4 col-xl-4 text-white" data-aos="fade-right" >
+							<h1 class="text-uppercase " >
+							SEE FOR YOURSELF
+							</h1>
+						</div>
+						<div class="sec2-col col-sm-12 col-md-4 col-xl-4 text-white" data-aos="fade-up">
+							<p>
+								Get a feel for campus on a guided,
+								virtual tour.
+							</p>
+						</div>
+						<div class="sec2-col col-sm-12 col-md-4 col-xl-4 text-white" data-aos="fade-left">
+							<div class="sec2-btn mx-auto" >
+								<a href="aboutUs/about.html" class="text-decoration-none">Who We Are <i class="sec6-icon fas fa-user-secret"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- *************** section-7 **************** -->
+		<footer class="footer-section">
+			<div class="container">
+				
+				<div class="footer-content pt-5 pb-2">
+					<div class="row">
+						
+						<div class="col-xl-4 col-lg-4 mb-50">
+							<div class="footer-widget">
+								<div class="footer-logo">
+									<a href="index.html"><img src="home/assets/img/footerimg.png" class="img-fluid" alt="logo"></a>
+								</div>
+								<div class="footer-text">
+									<p>EduCatalyst, web app has been developed to override the problems faced by students. Free Resources has been included.</p>
+								</div>
+								<div class="footer-social-icon">
+									<span>Follow us</span>
+									<a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+									<a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+									<a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+							<div class="footer-widget">
+								<div class="footer-widget-heading">
+									<h3>Useful Links</h3>
+								</div>
+								<ul class="footer-ul">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="aboutUs/about.html">about</a></li>
+									<li><a href="contactUs/contact.html">Contact</a></li>
+									<li><a href="#">Latest News</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+							<div class="footer-widget">
+								<div class="footer-widget-heading">
+									<h3>Contact Us</h3>
+								</div>
+								<div class="footer-text mb-25">
+									<p>Enter your mail we will contact you soon.</p>
+								</div>
+								<div class="subscribe-form">
+									<form action="https://formspree.io/f/xpzbqkvv" method="POST">
+										<input type="text" placeholder="Email Address" name="_replyto">
+										<button type="submit"><i class="fab fa-telegram-plane"></i></button>
+									</form>
+								</div>
+							</div>
+							<div class="single-cta single-cta1">
+								<i class="fas fa-map-marker-alt"></i>
+								<div class="cta-text">
+									<h4>Find us</h4>
+									<span>Faridabad, Delhi NCR</span>
+								</div>
+							</div>
+							<div class="single-cta">
+								<i class="fas fa-phone"></i>
+								<div class="cta-text">
+									<h4>Call us</h4>
+									<span>90124876540 0</span>
+								</div>
+							</div>
+							<div class="single-cta">
+								<i class="far fa-envelope-open"></i>
+								<div class="cta-text">
+									<h4>Mail us</h4>
+									<span>mail@info.com</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 text-center text-lg-left">
+							<div class="copyright-text">
+								<p>Copyright &copy; 2022, All Right Reserved <a href="../index.html">EduCatalyst</a></p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="home/js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

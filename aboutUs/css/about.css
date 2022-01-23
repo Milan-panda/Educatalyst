@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Chewy&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+body::before{
+	display: block;
+	content: "";
+	height: 122px;
+}
+/* **************************** Navbar Css Start **************************************** */
+.navbar{
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.35) 100%) !important;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) !important;
+	backdrop-filter: blur(24px) !important;
+}
+.navbar .nav-item{
+	padding-right: 41px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: 0.2px;
+	color: rgba(0,0,0,.9);
+
+
+}
+.navbar-toggler-icon {
+	background: url("../assets/logo/navbar-toggler-icon.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: 100% !important;
+
+}
+.navbar-toggler{
+	border: none;
+}
+.navbar-toggler:focus{
+	box-shadow: none;
+
+}
+
+/* ******************************** Navbar Css End ******************************************** */
+/*SEC 1*/
+@keyframes blinkcolor {
+    30%{
+        color: #df4a48;
+    }
+    70%{
+        color: #284454;
+    }
+    100%{
+        color: #389c15;
+    }
+}
+
+@keyframes moveleft {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(20px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+@keyframes moveright {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(-20px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+.theme-details .we-install {
+    font-size: 17px;
+}
+.we-install {
+    text-align: center;
+    font-size: 70px;
+	padding-top: 15vh;
+	padding-bottom: 20vh;
+	font-weight: 700px;
+	font-family: 'chewy', sans-serif;
+}
+.we-install a {
+    color: #df4a48;
+    border-bottom: 7px solid;
+    padding: 5px;
+	  text-decoration: none;
+    position: relative;
+    animation-name: blinkcolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.we-install a:hover {
+    animation-play-state: paused;
+}
+.we-install a:before {
+    content: "--";
+    font-family: fontawesome;
+    position: absolute;
+    left: -15%;
+    animation-name: moveleft;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.we-install a:after {
+    content: "--";
+    font-family: fontawesome;
+    position: absolute;
+    right: -15%;
+    animation-name: moveright;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+/*************** sec2 *****************/
+.sec2{
+	background: linear-gradient( 
+90deg
+ , hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+	padding: 100px 0;
+}
+.cont{	
+	max-width: :1000px;
+	padding: 100px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.card{
+	position: relative;
+	margin: 20px 0;
+	width: 300px ;
+	height: 400px;
+	background: #FFF;
+	transform-style: preserve-3d;
+	transform: perspective(2000px);
+	transition: 1s;
+	box-shadow: inset 300px 0 50px rgba(79,198,250,1);
+}
+.card:hover{
+	z-index: 1000;
+	transform: translateX(50%) perspective(2000px) rotate(-5deg);
+	box-shadow: inset 2px 0 20px rgba(79,198,250,1);
+	border: 2px solid #FFF;
+}
+.card .imgBox{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border: 3px solid #FFF;
+	transform-origin: left;
+	z-index: 1;
+	transition: 1s;
+}
+.card:hover .imgBox{
+	transform: rotateY(-180deg);
+}
+.card .imgBox .img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.card .details{
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 box-sizing: border-box;
+	 padding: 20px;
+	 color: #04133a;
+}	
+.card .details h2{
+	font-family: 'chewy', sans-serif;
+		background: linear-gradient(90deg,#08143D,#de413a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.icons .fab{
+	font-size: 30px;
+	margin: 10px;
+	color: #04133a;
+}
+.icons .fab:hover{
+		background: linear-gradient(90deg,#08143D,#de413a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/************ footer *************/
+.footer-ul{
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #060c22;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta{
+	margin: 15px 0;
+}
+.single-cta i {
+  color: #de413a;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}	
+.footer-logo{
+	padding-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 227px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #de413a;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #de413a;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #de413a;
+    padding: 13px 20px;
+    border: 1px solid #de413a;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #02071a;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #de413a;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}

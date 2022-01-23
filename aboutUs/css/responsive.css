@@ -1,0 +1,45 @@
+/********* navbar ************/
+@media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+  .logo{
+   justify-content: center;
+ }
+}
+@media (max-width: 992px){
+  .logo{
+    justify-content: space-between !important;
+    padding: 0px 20px;
+  }
+  .navbar-collapse{
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  .navbar-container{
+    padding: 18px 13px;
+  }
+}
+/******** section 1 media query *******/
+@media (max-width: 600px){
+	.sec1{
+		margin-top: 6.5rem;
+	}
+	.carousel-caption{
+		display: none;
+	}
+}
+/************* section 3 mediaquery **********/
+@media (max-width: 991px){
+	.sec3-gretext{
+		font-size: 3.5rem;
+	}
+	.sec3-col-img{
+		margin-bottom: 70px;
+	}
+  .sec3-col{
+    padding: 0;
+  }
+}

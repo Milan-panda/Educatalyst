@@ -1,0 +1,56 @@
+/* ***************** Navbar Media Query Start ************************** */
+
+@media(max-width: 991px)
+{
+	.navbar .nav-item{
+		padding-right: 0;
+	}
+	.navbar-nav{
+		padding: 21px;
+	}
+
+}
+/* *********************** Navbar Media Query End ****************************************** */
+
+/* *********************** Banner Section **************************** */
+
+ @media(max-width: 991px){
+
+ 	.banner-sec-1{
+ 		order: 2;
+ 	}
+ 	.banner-sec-2{
+ 		order: 1;
+ 	}
+ }
+
+ /* *********************** Book Section *********************** */
+
+ @media(max-width: 991px){
+ 	.books-section .book-text{
+ 		margin-top: 100px;
+ 	}
+ 	.book-row-2 .book-text{
+ 		order: 2;
+ 	}
+ 	.book-row-2 .book-img{
+ 		order: 1;
+ 	}
+ }
+
+ /* ************************ Youtube Section ************************************** */
+
+ @media(max-width: 991px){
+ 	.youtube-section iframe{
+ 		height: 350px;
+ 	}
+ 	.col-text{
+ 		margin-top: 50px;
+ 	}
+ 	.col-text-2{
+ 		order: 2;
+ 	}
+ 	.col-img-2{
+ 		order: 1;
+ 	}
+ }
